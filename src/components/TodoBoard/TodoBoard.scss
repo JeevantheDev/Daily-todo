@@ -1,0 +1,20 @@
+.todo-board {
+    margin: 1rem 0;
+    width: 100%;
+    height: 70%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
+
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    &::-webkit-scrollbar {
+        overflow: hidden;
+    }
+}

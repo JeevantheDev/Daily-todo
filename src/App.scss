@@ -1,0 +1,23 @@
+// Body Colors
+$body-primary-color: #ff8585;
+$body-secondary-color: #edb2b2;
+
+.App {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(
+        107.37deg,
+        $body-primary-color 0.26%,
+        $body-secondary-color 100%
+    );
+
+    &-container {
+        width: 75%;
+        height: 80%;
+        background-color: inherit;
+        border: 1px solid #333;
+        padding: 0.5rem;
+    }
+}

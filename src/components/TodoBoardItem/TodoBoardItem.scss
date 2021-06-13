@@ -1,0 +1,53 @@
+$board-background: #fff;
+
+$today-board-background: #542afe;
+$prev-board-background: #0d6cb0;
+$next-board-background: #780966;
+
+.current-todo-board {
+    background-color: $today-board-background;
+}
+.prev-todo-board {
+    background-color: $prev-board-background;
+}
+.next-todo-board {
+    background-color: $next-board-background;
+}
+
+.todo-board-container {
+    width: auto;
+    height: 100%;
+    background-color: $board-background;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25),
+        0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+
+    &-header {
+        width: 100%;
+        flex: 1;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        color: #fff;
+
+        .mr-auto {
+            margin-left: 1rem;
+            margin-right: auto;
+        }
+        .ml-auto {
+            margin-left: auto;
+            margin-right: 1rem;
+        }
+    }
+
+    &-todo-lists {
+        flex: 3;
+        color: #000;
+        overflow-y: auto;
+    }
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
