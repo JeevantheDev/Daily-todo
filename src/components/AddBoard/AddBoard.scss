@@ -1,38 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
 $btn-board-color: #ff8a00;
 $btn-create-color: #0077ff;
+$btn-today-color: #780966;
 $primary-text-color: #fff;
+$button-font: 'Staatliches', cursive;
 
 .btn-container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 30%;
+}
+.btn-common {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5px 20px;
+  background-color: $btn-board-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 47px;
+  color: $primary-text-color;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  font-family: $button-font;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .btn-board {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 11px 23px;
-    background-color: $btn-board-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 47px;
-    color: $primary-text-color;
-    text-transform: uppercase;
-    border: none;
-    cursor: pointer;
-    margin-bottom: 0.5rem;
+  @extend .btn-common;
+  background-color: $btn-board-color;
 }
 .btn-create {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 11px 23px;
-    background-color: $btn-create-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 47px;
-    color: $primary-text-color;
-    text-transform: uppercase;
-    border: none;
-    cursor: pointer;
-    margin-bottom: 0.5rem;
+  @extend .btn-common;
+  text-decoration: none;
+  background-color: $btn-today-color;
 }

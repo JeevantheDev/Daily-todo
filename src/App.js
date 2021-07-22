@@ -5,17 +5,17 @@ import TodoBoard from './components/TodoBoard/TodoBoard';
 import { GlobalProvider } from './context/Context';
 
 function App() {
-    return (
-        <GlobalProvider>
-            <div className="App">
-                <div className="App-container">
-                    <Header />
-                    <SigninButton />
-                    <TodoBoard />
-                </div>
-            </div>
-        </GlobalProvider>
-    );
+  return (
+    <GlobalProvider>
+      <div className="App">
+        <div className="App-container">
+          <Header />
+          <SigninButton />
+          <TodoBoard />
+        </div>
+      </div>
+    </GlobalProvider>
+  );
 }
 
 export default App;

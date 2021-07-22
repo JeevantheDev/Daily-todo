@@ -1,24 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
 $btn-signin-color: #962d2d;
 $primary-text-color: #fff;
+$button-font: 'Staatliches', cursive;
 
 .signin-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: calc(100% - 25%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100% - 25%);
 }
 
 .btn-signin {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 11px 23px;
-    background-color: $btn-signin-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 47px;
-    color: $primary-text-color;
-    text-transform: uppercase;
-    border: none;
-    cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5px 20px;
+  background-color: $btn-signin-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 47px;
+  color: $primary-text-color;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: $button-font;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
 }

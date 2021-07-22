@@ -1,61 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
 $today-board-background: #542afe;
 $prev-board-background: #0d6cb0;
 $next-board-background: #780966;
 
-.current-todo-btn-color {
-    color: $today-board-background;
-}
-.prev-todo-btn-color {
-    color: $prev-board-background;
-}
-.next-todo-btn-color {
-    color: $next-board-background;
-}
-.todo-box {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin: 1rem 0.5rem;
+$input-font: 'Staatliches', cursive;
 
-    i {
-        text-align: center;
-        background: none;
-        cursor: pointer;
-        margin: 0.6rem auto;
-        position: sticky;
-    }
+.current-todo-btn-color {
+  color: $today-board-background;
+}
+
+.prev-todo-btn-color {
+  color: $prev-board-background;
+}
+
+.next-todo-btn-color {
+  color: $next-board-background;
+}
+
+.todo-box {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 1rem 0.5rem;
+
+  i {
+    text-align: center;
+    background: none;
+    cursor: pointer;
+    margin: 0.6rem auto;
+    position: sticky;
+  }
 }
 .input-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0.5rem 0;
-    input[type='checkbox'] {
-        flex: 1;
-        width: 2rem;
-        height: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 0;
+
+  input[type='checkbox'] {
+    flex: 1;
+    width: 2rem;
+    height: 1rem;
+  }
+
+  input[type='text'] {
+    font-size: 1rem;
+    font-family: $input-font;
+    flex: 4;
+    width: 4rem;
+    height: 1.5rem;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 1px solid #333;
+    margin-left: auto;
+    &:focus {
+      outline: none;
     }
-    input[type='text'] {
-        font-size: 1rem;
-        flex: 4;
-        width: 4rem;
-        height: 1.5rem;
-        padding: 0.5rem;
-        border: none;
-        border-bottom: 1px solid #333;
-        margin-left: auto;
-        &:focus {
-            outline: none;
-        }
-    }
-    i {
-        flex: 1;
-        margin-left: 1rem;
-        color: red;
-    }
+  }
+
+  i {
+    flex: 1;
+    margin-left: 1rem;
+    color: red;
+  }
 }
 
 .strike-through {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
