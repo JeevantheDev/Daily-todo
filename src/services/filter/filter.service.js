@@ -19,7 +19,6 @@ export const getTodoBoardByDate = (userID, dateRange) => {
             snapshot.forEach((doc) => {
               response.push({ ...doc.data(), boardID: doc.id });
             });
-            console.log(response);
             resolve(response);
           })
           .catch((err) => {
