@@ -1,6 +1,6 @@
 ### Daily TODO Organiser
 
-> Organise your daily todod by date creating a board.
+> Organise your daily todos by date creating a board.
 
 ### Idea
 
