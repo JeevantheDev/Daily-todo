@@ -11,4 +11,4 @@
 
 ### Tech Stack
 
-- React.js, react-datepicker, Firebase(Hosting, Firestote, Authentication), SCSS
+- React.js, react-datepicker, Firebase(Hosting, Firestore, Authentication), SCSS
